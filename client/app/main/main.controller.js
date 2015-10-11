@@ -15,8 +15,22 @@ angular.module('dignitasApp')
       $http.post('/api/things', { name: $scope.newThing });
       $scope.newThing = '';
     };
-
     $scope.deleteThing = function(thing) {
       $http.delete('/api/things/' + thing._id);
-    };
-  });
+        };
+        $(document).ready(function () {
+            var clicks;
+
+            $('#icon').on("click", function () {
+                $("#info").css("visibility", "visible");
+                clicks = 1;
+
+                if (clicks > 0) {
+                    $('#icon').on("click", function () {
+                        $("#info").css("visibility", "hidden");
+                        clicks = 0;
+                    });
+                } else {}
+            });
+        });
+    });

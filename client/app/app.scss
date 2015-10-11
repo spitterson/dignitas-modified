@@ -1,12 +1,23 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 $fa-font-path: "/bower_components/font-awesome/fonts";
-
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'font-awesome/scss/font-awesome';
 
 /**
  * App-wide Styles
  */
+
+$font-size: 16px;
+$bg-one: #858585;
+$bg-two: #bbbbbb;
+$font-one: "garamond-premier-pro-display";
+html {
+    font-size: $font-size;
+}
+
+p {
+    font-size: $font-size + 4px;
+}
 
 .browsehappy {
     margin: 0.2em 0;
@@ -15,9 +26,34 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     padding: 0.2em 0;
 }
 
+body {
+    background-color: $bg-one;
+    font-family: $font-one;
+    > .container-fluid {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+img {
+    border: 3px;
+    border-radius: 7.5px;
+}
+
+.navbar .navbar-default {
+    background-color: transparent;
+    > .navbar-brand {
+        color: white;
+    }
+}
+
 // Component styles are injected through grunt
 // injector
 @import 'contact-us/contact-us.scss';
 @import 'main/main.scss';
+@import 'what-we-do/what-we-do.scss';
+@import 'footer/footer.scss';
+@import 'header/header.scss';
 @import 'modal/modal.scss';
+@import 'navbar/navbar.scss';
 // endinjector

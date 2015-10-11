@@ -2,24 +2,12 @@
     margin: 20px 0;
 }
 
-#banner {
-    border-bottom: none;
-    margin-top: -20px;
-}
-
-#banner h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-}
 
 .hero-unit {
     position: relative;
     padding: 30px 15px;
-    color: yellow;
     text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    background: #4393B9;
 }
 
 .footer {
@@ -32,3 +20,62 @@
 .navbar-text {
   margin-left: 15px;
 }
+
+#row-one {
+    background: lighten($bg-one, 40%);
+    padding: 1em;
+    min-height: 450px;
+    height: 100%;
+}
+
+#row-one img {
+    margin-top: 15px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#row-one p {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+#row-two {
+    padding: 1.5em;
+    min-height: 450px;
+    height: 100%;
+}
+
+#row-two img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#row-two img:hover {
+    background-color: blue;
+}
+
+#row-two p {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+#icon {
+    border-radius: 10px;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#icon:hover {
+    background-color: aqua;
+}
+
+#info{
+    display: none;
+}
+
